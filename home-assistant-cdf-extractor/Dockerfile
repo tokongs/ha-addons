@@ -8,11 +8,9 @@ ENV POETRY_HOME="/opt/poetry" \
     POETRY_NO_INTERACTION=1 
 ENV PATH="$POETRY_HOME/bin:$PATH"
 
-RUN apk add --update --no-cache gcc musl-dev libc-dev linux-headers zlib-dev && curl -sSL https://install.python-poetry.org | python3 -
-RUN 
+RUN apk add --update --no-cache gcc musl-dev libc-dev linux-headers zlib-dev
 
 COPY . . 
-RUN poetry install --no-interaction --no-ansi 
-RUN chmod +x run.sh
+RUN pip install -r requirements.txt && chmod +x run.sh
 
 CMD ["./run.sh"]

@@ -9,9 +9,9 @@ from cognite.extractorutils.rest import RestExtractor
 from cognite.extractorutils.uploader_types import Event, InsertDatapoints, RawRow
 from dateutil import parser
 
-from home_assistant_cdf_extractor import __version__
-from home_assistant_cdf_extractor.config import Config
-from home_assistant_cdf_extractor.dto import StatesResponse
+from __init__ import __version__
+from config import Config
+from dto import StatesResponse
 
 extractor = RestExtractor(
     name="home_assistant_cdf_extractor",

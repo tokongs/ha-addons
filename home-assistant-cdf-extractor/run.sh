@@ -7,4 +7,4 @@ export HA_BASE_URL
 HA_TOKEN=$(bashio::config 'ha_token')
 export HA_TOKEN
 
-poetry run home_assistant_cdf_extractor extractor_config.yaml
+python src extractor_config.yaml
