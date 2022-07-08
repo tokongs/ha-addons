@@ -102,22 +102,15 @@ typing-extensions = ">=3.7.4,<5"
 
 [[package]]
 name = "cognite-extractor-utils-rest"
-version = "0.1.0"
+version = "0.1.1"
 description = "REST extention for the Cognite extractor-utils framework"
 category = "main"
 optional = false
 python-versions = ">=3.7,<3.11"
-develop = false
 
 [package.dependencies]
-cognite-extractor-utils = "^2.1.2"
-requests = "^2.27.0"
-
-[package.source]
-type = "git"
-url = "https://github.com/cognitedata/python-extractor-utils-rest"
-reference = "tobias/json-root-list"
-resolved_reference = "0d05b6016ad5aa5199c783f448599faeecfd2e88"
+cognite-extractor-utils = ">=2.1.2,<3.0.0"
+requests = ">=2.27.0,<3.0.0"
 
 [[package]]
 name = "cognite-sdk-core"
@@ -600,7 +593,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7,<3.11"
-content-hash = "a6f169e5ede6798d561e8073639b16334fb76b6fd9717387033726ad2943d7ee"
+content-hash = "081ca65d3f807cfd614ee9398dcbb590c4622cb3469e8a11cd64fbd36f99f32d"
 
 [metadata.files]
 altgraph = [

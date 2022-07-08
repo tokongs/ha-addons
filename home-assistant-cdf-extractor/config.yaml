@@ -8,10 +8,8 @@ hassio_api: true
 arch:
   - aarch64
   - amd64
-  - armhf
   - armv7
-  - i386
-image: "tokongs/image-{arch}/home-assistant-cdf-extractor"
+image: "tokongs/image-{arch}-home-assistant-cdf-extractor"
 options: 
   ha_base_url: http://homeassistant:8123
   ha_token: null

@@ -25,7 +25,7 @@ known_third_party = ["arrow", "cognite", "dateutil", "requests"]
 python = ">=3.7,<3.11"
 cognite-sdk-core = "^2.50.1"
 cognite-extractor-utils = "^2.2.0"
-cognite-extractor-utils-rest = { git = "https://github.com/cognitedata/python-extractor-utils-rest", branch = "tobias/json-root-list"}
+cognite-extractor-utils-rest = "^0.1.1"
 arrow = "^1.2.2"
 
 [tool.poetry.dev-dependencies]
