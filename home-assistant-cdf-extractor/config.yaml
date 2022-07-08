@@ -1,0 +1,37 @@
+name: "CDF extractor"
+description: "Extract data to Cognite Data Fusion"
+version: "1.0.0"
+slug: "cdf_extractor"
+init: false
+homeassistant_api: true
+hassio_api: true 
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+options: 
+  ha_base_url: http://homeassistant:8123
+  ha_token: null
+  ha_entities: []
+  cognite_base_url: https://api.cognitedata.com
+  cognite_client_secret: null
+  cognite_client_id: null
+  cognite_project: null
+  cognite_token_url: null
+  cognite_dataset_id: null
+  cognite_extraction_pipeline_external_id: null
+schema:
+  ha_base_url: url
+  ha_token: str
+  ha_entities: 
+    - str
+  cognite_base_url: url
+  cognite_client_secret: str
+  cognite_client_id: str
+  cognite_project: str
+  cognite_token_url: url
+  cognite_dataset_id: str
+  cognite_extraction_pipeline_external_id: str
+

@@ -1,0 +1,25 @@
+logger:
+    console:
+        level: INFO
+
+cognite:
+    # Read these from environment variables
+    host: {{ .cognite_base_url }}
+    project: {{ .cognite_project }}
+    data-set-id: {{ .cognite_dataset_id }}
+    extraction-pipeline:
+        external-id: {{ .cognite_extraction_pipeline_external_id }}
+    
+    idp-authentication:
+        token-url: {{ .cognite_token_url }}
+
+        client-id: {{ .cognite_client_id }}
+        secret: {{ .cognite_client_secret }}
+        scopes:
+            - {{ .cognite_base_url }}/.default
+ha:
+    base-url: {{ .ha_base_url }}
+    token: {{ .ha_token }}
+    entities: {{ range .ha_entities }}
+        - {{.}}
+    {{- end}}
